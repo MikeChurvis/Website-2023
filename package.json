@@ -1,4 +1,7 @@
 {
   "name": "Website-2023",
-  "packageManager": "yarn@3.6.0"
+  "packageManager": "yarn@3.6.0",
+  "dependencies": {
+    "prettier": "^2.8.8"
+  }
 }
