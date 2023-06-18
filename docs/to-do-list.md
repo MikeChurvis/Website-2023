@@ -31,5 +31,5 @@ The "current site" will hereforward be called the **"old site"**.
 
 - [ ] Show that the site is under construction.
   - [x] Initialize Astro.
-  - [ ] Make a giant box, center screen, that says "under construction".
+  - [x] Make a giant box, center screen, that says "under construction".
   - [ ] Put a link to the old site inside the box.

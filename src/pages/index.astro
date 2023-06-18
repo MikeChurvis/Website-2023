@@ -1,4 +1,5 @@
 ---
+import UnderConstruction from "@/components/UnderConstruction.astro";
 ---
 
 <html lang="en">
@@ -7,9 +8,28 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/tailwindcss@3.3.2/src/css/preflight.css"
+		/>
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<div class="mwc-fullpage-placeholder">
+			<UnderConstruction>Site Under Construction</UnderConstruction>
+		</div>
 	</body>
 </html>
+
+<style>
+	body {
+		background-color: black;
+	}
+	:root {
+		--mwc-color-warning: 255, 69, 0;
+	}
+
+	.mwc-fullpage-placeholder {
+		height: 100svh;
+	}
+</style>

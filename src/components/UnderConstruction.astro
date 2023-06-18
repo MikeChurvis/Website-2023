@@ -1,0 +1,31 @@
+<div class="mwc-under-construction">
+    <div class="mwc-under-construction__grid-parent">
+        <div class="mwc-under-construction__content-container">
+            <slot />
+        </div>
+    </div>
+</div>
+
+<style>
+    .mwc-under-construction {
+        height: 100%;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .mwc-under-construction__grid-parent {
+        display: grid;
+        height: 100%;
+        font-size: xx-large;
+        outline: 0.5rem dashed rgb(var(--mwc-color-warning), 0.7);
+        outline-offset: 0.25em;
+        border-radius: 1em;
+        background-color: rgb(var(--mwc-color-warning), 0.2);
+        color: rgb(var(--mwc-color-warning));
+    }
+
+    .mwc-under-construction__content-container {
+        justify-self: center;
+        align-self: center;
+    }
+</style>
