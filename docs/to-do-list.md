@@ -8,13 +8,28 @@
   - [x] Force push the current codebase to the new remote.
   - [x] Archive the new remote.
 - [x] Freeze the current site.
-  - [x] Disable automatic CI in the `mikechurvis.github.io` repo.
+  - [x] Disable automatic CI in the `mikechurvis.github.io` repo, hereforward called the **"live site repo"**.
   - [x] Put the current published site files on the `main` branch
   - [x] Change the GitHub Pages publisher target branch from `gh-pages` to `main`. 
   - [x] Republish the site.
   - [x] Verify that the current site remains published.
   - [x] Delete the `gh-pages` branch.
 - [x] Take down the API backend on DigitalOcean.
-  - [x] Shut down the droplet.
+- [x] Purge old secrets from the live site repo.
 
-## Phase 2: Build the Placeholder for the New Site
+The "current site" will hereforward be called the **"old site"**.
+
+## Phase 2: Hand Over the live site repo from the old site to the new.
+
+- [ ] Make a new remote repo called `old`, hereforward called the **"old site repo"**.
+- [ ] Set the old site repo as a remote on the live site repo.
+- [ ] Push the live site repo's `main` branch to the old site repo.
+- [ ] Enable GitHub Pages on the old site repo's `main` branch.
+- [ ] Once the GitHub Pages CI job has completed its run, verify that the old site is available at `mikechurvis.com/old`.
+
+## Phase 3: Build the Placeholder for the New Site
+
+- [ ] Show that the site is under construction.
+  - [ ] Initialize Astro.
+  - [ ] Make a giant box, center screen, that says "under construction".
+  - [ ] Put a link to the old site inside the box.
