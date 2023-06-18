@@ -1,0 +1,52 @@
+name: Deploy to GitHub Pages
+
+on:
+  # Trigger the workflow every time you push to the `main` branch
+  # Using a different branch name? Replace `main` with your branch’s name
+  push:
+    branches: [ main ]
+  # Allows you to run this workflow manually from the Actions tab on GitHub.
+  workflow_dispatch:
+  
+# Allow this job to clone the repo and create a page deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v3
+
+      - name: Install, build, and upload your site
+        uses: withastro/action@v0
+        with:
+            node-version: 18
+            package-manager: yarn
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Get build output
+        uses: actions/download-artifact@v3
+        with:
+            name: github-pages
+            path: dist
+      
+      - name: Push the built site to the live site repo
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          SSH_DEPLOY_KEY: ${{ secrets.WEBSITE_2023_DEPLOY_KEY }}
+        with:
+          source-directory: dist/
+          destination-github-username: mikechurvis
+          destination-repository-name: mikechurvis.github.io
+          user-email: mikechurvis@gmail.com
+          commit-message: "[Website-2023] See ORIGIN_COMMIT from $GITHUB_REF"
+          target-branch: main
