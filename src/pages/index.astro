@@ -16,20 +16,22 @@ import UnderConstruction from "@/components/UnderConstruction.astro";
 	</head>
 	<body>
 		<div class="mwc-fullpage-placeholder">
-			<UnderConstruction>Site Under Construction</UnderConstruction>
+			<UnderConstruction />
 		</div>
 	</body>
 </html>
 
 <style>
-	body {
-		background-color: black;
-	}
 	:root {
-		--mwc-color-warning: 255, 69, 0;
+		--mwc-color-warning: 255, 80, 0;
+	}
+
+	body {
+		/* background-color: black; */
 	}
 
 	.mwc-fullpage-placeholder {
 		height: 100svh;
+		font-size: xx-large;
 	}
 </style>

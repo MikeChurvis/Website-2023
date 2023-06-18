@@ -1,31 +1,35 @@
+<!-- 
+    This is a parent-height, parent-width placeholder box.
+    The scaling of the content and outline are governed by the `font-size` of the parent. 
+-->
 <div class="mwc-under-construction">
     <div class="mwc-under-construction__grid-parent">
         <div class="mwc-under-construction__content-container">
-            <slot />
+            <slot>Under Construction</slot>
         </div>
     </div>
 </div>
 
-<style>
+<style lang="scss">
     .mwc-under-construction {
         height: 100%;
         width: 100%;
-        padding: 2rem;
-    }
+        padding: 1em;
 
-    .mwc-under-construction__grid-parent {
-        display: grid;
-        height: 100%;
-        font-size: xx-large;
-        outline: 0.5rem dashed rgb(var(--mwc-color-warning), 0.7);
-        outline-offset: 0.25em;
-        border-radius: 1em;
-        background-color: rgb(var(--mwc-color-warning), 0.2);
-        color: rgb(var(--mwc-color-warning));
-    }
+        &__grid-parent {
+            display: grid;
+            height: 100%;
+            font-weight: bolder;
+            outline: 0.5em dashed rgb(var(--mwc-color-warning), 0.7);
+            outline-offset: 0.25em;
+            border-radius: 1em;
+            background-color: rgb(var(--mwc-color-warning), 0.2);
+            color: rgb(var(--mwc-color-warning));
+        }
 
-    .mwc-under-construction__content-container {
-        justify-self: center;
-        align-self: center;
+        &__content-container {
+            justify-self: center;
+            align-self: center;
+        }
     }
 </style>
