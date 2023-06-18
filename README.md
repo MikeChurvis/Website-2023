@@ -12,6 +12,8 @@ I'm using Astro because I want a static site that's easily extensible.
 
 I'm using Sass because I prefer BEM as a CSS coding style, and Sass's parent selector and nesting handle it well.
 
+I'm using Tailwind's Preflight to remove the default browser styles.
+
 ---
 
 # Astro Starter Kit: Minimal

@@ -15,23 +15,69 @@ import UnderConstruction from "@/components/UnderConstruction.astro";
 		<title>Astro</title>
 	</head>
 	<body>
-		<div class="mwc-fullpage-placeholder">
-			<UnderConstruction />
-		</div>
+		<main>
+			<section class="mwc-landing__under-construction">
+				<UnderConstruction>
+					<div class="mwc-landing__under-construction__content">
+						<h1>MIKECHURVIS.COM</h1>
+						<p>is currently under construction.</p>
+						<p>
+							A copy of the old site is
+							<a href="/old">available here</a>.
+						</p>
+					</div>
+				</UnderConstruction>
+			</section>
+		</main>
+
+		<footer>
+			<div>
+				Icon made from
+				<a href="http://www.onlinewebfonts.com/icon">Icon Fonts</a>
+				is licensed by CC BY 3.0
+			</div>
+		</footer>
 	</body>
 </html>
 
-<style>
+<style lang="scss">
 	:root {
 		--mwc-color-warning: 255, 80, 0;
+		font-family: system-ui, sans-serif;
 	}
 
 	body {
-		/* background-color: black; */
+		background-color: black;
+		color: white;
 	}
 
-	.mwc-fullpage-placeholder {
+	.mwc-landing__under-construction {
 		height: 100svh;
 		font-size: xx-large;
+
+		&__content {
+			display: grid;
+
+			& * {
+				justify-self: center;
+			}
+
+			h1 {
+				font-size: 1.6em;
+			}
+
+			p {
+				font-size: 0.8em;
+			}
+
+			a {
+				color: red;
+				text-decoration: underline 0.0625em;
+
+				&:visited {
+					color: darkred;
+				}
+			}
+		}
 	}
 </style>
