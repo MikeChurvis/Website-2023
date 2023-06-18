@@ -29,7 +29,14 @@ The "current site" will hereforward be called the **"old site"**.
 
 ## Phase 3: Build the Placeholder for the New Site
 
-- [ ] Show that the site is under construction.
-  - [ ] Initialize Astro.
-  - [ ] Make a giant box, center screen, that says "under construction".
-  - [ ] Put a link to the old site inside the box.
+- [x] Show that the site is under construction.
+  - [x] Initialize Astro.
+  - [x] Make a giant box, center screen, that says "under construction".
+  - [x] Put a link to the old site inside the box.
+- [ ] Output the new site to the live site repo.
+  - [x] Create an SSH deploy key.
+  - [x] Put the private key in the new site repo secrets.
+  - [x] Put the public key in the live site repo's SSH Deploy Keys settings.
+  - [ ] Add Astro's GH Pages deployment job to this repo.
+  - [ ] Modify that deployment job to push the build output to the live site repo (use https://cpina.github.io/push-to-another-repository-docs/overview.html).
+  - [ ] Verify that the new site is deployed, but that the old site is still available at `mikechurvis.com/old`.
