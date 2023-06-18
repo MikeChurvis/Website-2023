@@ -14,7 +14,7 @@
   - [x] Republish the site.
   - [x] Verify that the current site remains published.
   - [x] Delete the `gh-pages` branch.
-- [ ] Take down the API backend on DigitalOcean.
-  - [ ] Shut down the droplet.
+- [x] Take down the API backend on DigitalOcean.
+  - [x] Shut down the droplet.
 
 ## Phase 2: Build the Placeholder for the New Site
