@@ -21,11 +21,11 @@ The "current site" will hereforward be called the **"old site"**.
 
 ## Phase 2: Hand Over the live site repo from the old site to the new.
 
-- [ ] Make a new remote repo called `old`, hereforward called the **"old site repo"**.
-- [ ] Set the old site repo as a remote on the live site repo.
-- [ ] Push the live site repo's `main` branch to the old site repo.
-- [ ] Enable GitHub Pages on the old site repo's `main` branch.
-- [ ] Once the GitHub Pages CI job has completed its run, verify that the old site is available at `mikechurvis.com/old`.
+- [x] Make a new remote repo called `old`, hereforward called the **"old site repo"**.
+- [x] Set the old site repo as a remote on the live site repo.
+- [x] Push the live site repo's `main` branch to the old site repo.
+- [x] Enable GitHub Pages on the old site repo's `main` branch.
+- [x] Once the GitHub Pages CI job has completed its run, verify that the old site is available at `mikechurvis.com/old`.
 
 ## Phase 3: Build the Placeholder for the New Site
 
