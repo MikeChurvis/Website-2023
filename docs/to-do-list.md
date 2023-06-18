@@ -39,4 +39,4 @@ The "current site" will hereforward be called the **"old site"**.
   - [ ] Put the public key in the live site repo's SSH Deploy Keys settings.
   - [ ] Add Astro's GH Pages deployment job to this repo.
   - [ ] Modify that deployment job to push the build output to the live site repo (use https://cpina.github.io/push-to-another-repository-docs/overview.html).
-  - [ ] Verify that the new site is deployed, but that the old site is still available at `mikechurvis.com/old`
+  - [ ] Verify that the new site is deployed, but that the old site is still available at `mikechurvis.com/old`.
