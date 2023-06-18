@@ -30,6 +30,6 @@ The "current site" will hereforward be called the **"old site"**.
 ## Phase 3: Build the Placeholder for the New Site
 
 - [ ] Show that the site is under construction.
-  - [ ] Initialize Astro.
+  - [x] Initialize Astro.
   - [ ] Make a giant box, center screen, that says "under construction".
   - [ ] Put a link to the old site inside the box.
